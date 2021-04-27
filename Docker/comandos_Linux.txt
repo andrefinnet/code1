@@ -1,0 +1,87 @@
+cdcomandos Linux:
+
+01 - PWD: encontrar o caminho do diretorio atual da pasta que você esta.O comando vai retornar um camimho completo (cheio)
+
+02 - CD: para navegar pelo FileSystem do Linux. use o comando CD Ele requer ou um caminho completo ou o nome de um diretório, dependendo do diretório atual em que você estiver.
+
+--> CD.. para mover um diretorio acima.
+
+--> CD: para ir diretamente pra pasta Home
+
+--> CD- (com hifen) para Mover para diretorios anteriores
+
+
+03 - LS Visualizar conteudos em um diretorio.Por padrão, esse comando vai mostrar os conteúdos apenas do diretório atual em que você estiver.
+--------------------------------------------------------
+Existem variações que você pode usar com o comando Ls:
+
+-->  LS -R vai listar todos os arquivos nos subdiretórios
+-->  LS -a vai mostrar todos os arquivos ocultos
+-->  LS -al vai listar todos os arquivos e diretórios com informações.
+
+--------------------------------------------------------
+
+04 - CAT (abraviação de concatenar)Ele é usado para visualizar o conteúdo de um arquivo na saída padrão (sdout). Para executar esse comando, digite cat seguido pelo nome do arquivo e sua extensão. Por exemplo: cat file.text.
+
+Aqui estão outras maneiras de usar o comando cat:
+
+cat > filename cria um novo arquivo
+cat filename1 filename2>filename3 junta dois arquivos (1 e 2) e armazena a saída deles num novo arquivo (3)
+para converter um arquivo para usos de maiúscula ou minúscula, use cat filename | tr a-z A-Z >output.txt
+---------------------------------------------------------
+
+05 - CP para copiar arquivo do Diretorio atual em que você estiver!
+Por Exemplo:
+O camando: cp scenery.jpg/home/username/Pictures vai criar uma copia de scenery.jpg para o diretorio Pictures.
+
+---------------------------------------------------------
+
+06 - MV Serve para mover arquivos,  ainda que ele possa também ser usado para renomear arquivos.
+
+Os argumentos neste comando é similar ao comando cp. Você precisa digitar mv, o nome do arquivo e o diretório de destino. Por exemplo: mv file.txt /home/username/Documents.  
+
+Já para renomear arquivos, a sintaxe é mv nomeantigo.ext nomenovo.ext.
+
+----------------------------------------------------------
+07 - MKDIR  Cria um novo Diretorio dentro de outro diretorio use este comando básico do Linux mkdir Music/Newfile
+use a opção p (parents) para criar um diretório entre dois diretórios existentes. Por exemplo, mkdir -p Music/2020/Newfile vai criar o novo arquivo “2020”.
+
+----------------------------------------------------------
+
+08 - RMDIR  Apagar e Deletar um Diretorio, use o comando rmdir. Porém, o rdmir só permite que você apague diretórios vazios (sem conteúdos).
+
+----------------------------------------------------------
+
+09 - RM  O comando rm é usado para apagar um diretório e todos os conteúdos que estiverem lá dentro. Se você só quer deletar o diretório – como uma alternativa ao rdmir – use rm -r.
+(-r de recursivo)
+----------------------------------------------------------
+10 - TOUCH  O comando touch permite criar novos arquivos em branco através de uma linha de comando. Como exemplo, digite touch /home/username/Documents/Web.html para criar um arquivo HTML chamado Web dentro do diretório Documents.
+
+----------------------------------------------------------
+11 - LOCATE  Você pode o comando locate para localizar um arquivo, assim como você faz para procurar um arquivo no Windows. Além disso, usando o argumento -i junto com esse comando faz com que ele se torne insensível a caracteres, permitindo que você pesquise por um arquivo não sabendo exatamente o nome dele.
+
+Para procurar um arquivo que contém duas ou mais palavras, use um asterisco (*). Por exemplo, use o comando locate -i school*note para encontrar qualquer arquivo que tenha as palavras “school” e “note”, não importando se existem letras maiúsculas ou minúsculas.
+
+---------------------------------------------------------
+12 - FIND  Similar ao comando locate, o comando find ajuda você a procurar por arquivos. A diferença é que você usa o find para localizar arquivos dentro de um diretório específico.
+
+Como exemplo, digite find /home/ -name notes.txt para procurar por um arquivo chamado notes.txt dentro do diretório home e seus subdiretórios.
+
+Outras variações na hora de usar o find são:
+
+Para encontrar arquivos no diretório atual, use find . -name notes.txt
+Para procurar por diretórios, use / -type d -name notes. txt
+----------------------------------------------------------
+
+13 -  GREP  Outro dos principais comandos Linux e que são frequentemente usados pela sua utilidade. O comando grep permite que você procure através de todo texto dentro de um arquivo específico.
+
+Para ilustrar, use grep blue notepad.txt para procurar pela palavra blue no arquivo notepad. Linhas que contêm a palavra pesquisadas serão mostradas por completo.
+
+----------------------------------------------------------
+14 - SUDO Correspondente a SuperUser Do, o comando sudo permite que que você execute tarefas que exigem permissões root ou administrativas. Porém, não é muito aconselhável usá-lo diariamente porque pode ser que um erro aconteça se você fizer algo de errado.  
+
+----------------------------------------------------------
+15 - DF  Use o comando df para obter uma resposta da quantidade de espaço de disco usado no seu sistema. Esse valor será mostrado em KBs. Se você ver os resultados em MBs, digite df -m.
+----------------------------------------------------------
+16 - DDU
+  

@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Comandos Docker </title>
+    </head>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./p1.JS"></script>
+    <body>
+        <main>
+        <article>
+            <h2>Comandos docker: <br></h2>
+<article>
+
+    <p>$ docker ps-><br></p>
+ 
+<p>-Rodando o Ubuntu:<br></p>
+<nav>
+    <ol>
+        <li><strong> 01 - $docker run -it ubuntu bash</strong><br></li>
+        <li>-------------------------------</li>
+        <li><i>Fixando o conhecimento:</i><br></li>
+        <li><strong> 02 - $docker run -it ubuntu echo Aprendendo Docker</strong><br></li>
+        <li>-Esse Primeiro comando vai iniciar um container em modo interativo<br> e com um terminal anexado baseado na ultima imagem do ubuntu<br> disponivel!.</li>
+        <li>--------------------------------</li>
+        <li><strong> 03 - $docker run -it ubuntu sh -c 'echo aprendendo docker</strong><br></li>
+        <li>-Esse segundo comando vai ter a mesma saida, porém, da maneira que eexecutado<br>poderiamos ter concatenados alguns outro comandos dentro do <br> parametro -c ("comando"), ja que neste caso o processo-base para o container não foi o comando echo, mais sim o sh<br></li>
+        <li>--------------------------------</li>
+        <li><strong> 04 - $docker run -i ubuntu ping -c 7 google.com</strong><br><br></li>
+        <li> -No Terceiro comando ping será executado sete<br>vezes dentro do container, e a saida e mostrada na tela,<br> quando terminar o container e encerrado.</li>
+        <li>------------------------------</li>
+        <li>-<strong> 05 - $docker run -d ubuntu ping google.com</strong><br></li>
+        <li> -No Quarto Comando, o mesmo ping e executado,<br> mais a flag -d detached foi passada. Então, no output aparece apenas o ID longo do conteiner. <br> Enquanto o ping esta rodando mesmo que sem mostrar o output, o contêiner permanece de pé. Ao terminar o ping<br> o contêiner e encerrado, como está em segundo plano (background), nem percebemos.<br></li>
+        <li>-------------------------------<br></li>
+        <li><h2>Principais comandos do Docker:<br></h2></li>
+        <li><strong> 06 - docker info:</strong><br></li>
+        <li>Quando terminamos de subir o Docker Engine testamos<br> com as principais informações usando o $docker info<br>(informações sobre o docker host no momento).<br></li>
+        <li>-------------------------------<br></li>
+        <li>-<strong> 07 - docker run:</strong><br></li>
+        <li> Este e um dos mais importantes comandos do Docker.<br> Ele executa um contêiner com base em sua  imagem e tem diversos<br> parametros possiveis para combinações e configurações.<br></li>
+        <li>-------------------------------<br></li>
+        <li>-<strong> 08 - docker ps:</strong><br></li>
+        <li>Este provavelmente e o comando que mais será utilizado durante nossa aventura com o docker.<br> Ele serve para mostrar detalhes sobre os containers.<br></li>
+        <li>-----------------------------------<br></li>
+        <li>-<strong> 09 - docker images:</strong><br></li>
+        <li>Este comando e muito parecido com docker ps,<br> serve para listar as imagens que temos localmente em nosso Docker Host/<br></li>
+        <li>-------------------------------------------<br></li>
+        <li>-<strong> 10 - docker attach:</strong><br></li>
+        <li>Esse conado foi muito utilizado antes de inventarem o docker exec.<br> Serve para anexar um contêiner pelo nome ou pela ID para assumirmos o controle<br> sobre ele.</li>
+        <li>-------------------------------------------<br></li>
+        <li>-<strong> 11 - docker exec</strong><br></li>
+        <li>É um comando relativamente novo, que existe desde<br>adistribuição da versão 13.0 em outubro de 2014.<br></li>
+        <li>Este comando adicionaou um processo a mais a um contêoner que esteja rodando.<br></li>
+        <li><h3>fim do documento docker</h3></li>        
+    </nav>
+</article>
+    </main>
+<footer>
+
+
+    <hr>
+    <p>Esse e o Cabeçalho da Pagina</p>
+    <hr>
+
+</footer>
+
+</body>
+</html>
+

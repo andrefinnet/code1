@@ -1,0 +1,27 @@
+o01 - Dentro da Pasta do vamos inicializar o repositorio local:
+$git init.
+
+02 -Para adicionar todas as pastas:
+
+$ git add . (adiciona todo conteudo)
+$ git add Pasta (adiciona pasta especifica)
+
+03 - Vamos fazer o Commit desses arquivos usando:
+
+$git commit -m "mensagem de exemplo"
+
+04 -  Agora Vamos apontar a Origem do Repositorio Remoto:
+
+$git remote add origin ("nome do seu repositorio nuvem")
+
+05 - Por ultimo vamos dar o Push desses arquivos:
+
+$git push origin master 
+
+(Master e a branch padrão do github)
+
+06 - Como criar uma nova branch
+
+$git checkout -b "nome-branch"
+
+
